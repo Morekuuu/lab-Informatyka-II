@@ -32,7 +32,7 @@ class Node:
 
     def insert_new(self, data):
         current = self
-        while True:
+        while True: #sds
             if data < current.data:
                 # lewo
                 if current.left is None:
