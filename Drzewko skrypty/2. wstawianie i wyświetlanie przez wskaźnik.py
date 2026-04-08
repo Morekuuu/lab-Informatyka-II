@@ -40,7 +40,7 @@ class Node:
                     break
                 else:
                     current = current.left
-            else:
+            else: #sds
                 # prawo
                 if current.right is None:
                     current.right = Node(data)
