@@ -13,7 +13,7 @@ class Node:
         self.left = None
         self.right = None
         self.data = data
-
+    """
     def insert(self, data):
         # Compare the new value with the parent node
         if self.data:
@@ -28,7 +28,7 @@ class Node:
                 else:
                     self.right.insert(data)
         else:
-            self.data = data
+            self.data = data """ #stary sposób wstawiania danych do drzewa
 
     def insert_new(self, data):
         current = self
@@ -40,7 +40,7 @@ class Node:
                     break
                 else:
                     current = current.left
-            else: #sds
+            else:
                 # prawo
                 if current.right is None:
                     current.right = Node(data)
