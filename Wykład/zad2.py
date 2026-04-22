@@ -1,0 +1,1 @@
+print(str(__import__('math').exp(1)).replace('.',','))
