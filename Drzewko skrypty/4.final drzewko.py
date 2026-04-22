@@ -87,14 +87,12 @@ class Node:
             child.draw_tree_pretty(new_prefix, is_child_last, False, child_side)
 
 
-# --- Konfiguracja startowa ---
 total = 140
 abc = 321
 ms = 0.001
 dt = 100
 
 for i in range(0, total + 1):
-    # Wyczyść ekran
     print(os.popen("cls & echo GO:").read())
 
     print(time.time())
@@ -106,8 +104,7 @@ for i in range(0, total + 1):
     root = Node(12)
     r = random
 
-    # 30 losowych węzłów, żeby łatwiej było zaobserwować strukturę w konsoli
-    for j in range(0, 30):
+    for j in range(0, 10):
         root.insert_new(r.randint(0, 100))
 
     print("\n--- GRAFICZNA WIZUALIZACJA DRZEWA ---")
